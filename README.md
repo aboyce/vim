@@ -13,6 +13,15 @@ Notes and helper snippets whilst learning vim.
 
 - `w` to hop forwards by a word
 - `b` to hop backwards by a word
+- `e` to hop forwards by a word, but to the end of the word
+- `ge` to hop backward by a word, but to the end of the word
+
+A word in vim only includes letters, numbers and digits. To consider special characters you need a WORD, to interact with these you use the capital version of the key:
+
+- `W`
+- `B`
+- `E`
+- `gE`
 
 - `<relative line number> j` to jump down to that relative line number
 - `<relative line number> k` to jump up to that relative line number
