@@ -47,6 +47,7 @@ A word in vim only includes letters, numbers and digits. To consider special cha
   - `j` will delete the current line plus one down
   - `w` will delete the word starting from the word and forward
   - `b` will delete the word starting from the word and backward
+  - `i` will start the 'delete inside' mode, waiting for input on what to delete around, e.g. `"`, `)`
 
 ### Help
 
@@ -58,6 +59,9 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 ## Undo
 
 - `u` will undo the last command
+- `Ctrl` + `R` will redo
+  - You can redo each undo
+  - You can also undo n amount of changes with quantifiers, e.g. `4` + `Ctrl` + `r` will undo the last four changes.
 
 ## Insert Mode
 
@@ -95,6 +99,21 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 - `/` will enter Command Mode, you can then type to search, press `Enter` to lock in the search
 - `n` will hop through the results
 - `Shift` + `n` will hop through the results in reverse
+
+## Spelling
+
+You can add words to you dictionary.
+
+- `zg` will add the current word under the cursor to your dictionary.
+
+## Plugins
+
+### Coc
+
+You can navigate auto-suggestions with:
+
+- `Ctrl` + `n` to go to the next suggestion
+- `Ctrl` + `p` to go to the previous suggestion
 
 ## Helpful Tips
 
