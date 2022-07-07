@@ -1,4 +1,4 @@
-# Vim / NeoVim
+# Vim / Neovim
 
 Notes and helper snippets whilst learning Vim/Neovim.
 
