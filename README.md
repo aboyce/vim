@@ -136,6 +136,12 @@ See the loaded scripts:
 :scriptnames`
 ```
 
+Reload the config:
+
+```
+:so %
+```
+
 ## Plugins
 
 ### Coc
