@@ -1,6 +1,6 @@
-# vim
+# Vim / NeoVim
 
-Notes and helper snippets whilst learning vim.
+Notes and helper snippets whilst learning Vim/Neovim.
 
 Additional helper for supporting tools:
 
