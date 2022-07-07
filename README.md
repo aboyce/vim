@@ -10,10 +10,7 @@ Additional helper for supporting tools:
 
 ### Movement
 
-- `j` to move up
-- `k` to move down
-- `h` to move left
-- `l` to move right
+- `j`, `k`, `h`, `l` general movement
 
 - `w` to hop forwards by a word
 - `b` to hop backwards by a word
