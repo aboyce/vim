@@ -40,3 +40,24 @@ You can change between panes with:
 - `prefix q` will show the numbers of each pane, you can then move to it with `prefix q *` where `*` is the number to move to
 - `prefix o` will move to the next pane
 - `prefix` `Ctrl + o` will swap the pane with the active pane
+
+### Custom Configuration
+
+#### Reloading Configuration
+
+Allow the configuration to be reloaded with `prefix r`.
+
+```
+bind r source-file ~/.config/tmux/tmux.conf
+```
+
+#### Vim Style Pane Movement
+
+Use vim's `h`, `j`, `k`, `l` keys to control the pane movement.
+
+```
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+```
