@@ -26,35 +26,27 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 - `<relative line number> j` to jump down to that relative line number
 - `<relative line number> k` to jump up to that relative line number
 
-## Editing
-
-- `yy` will yank a line
-- `p` will paste the line one line below
-- `Shift` + `p` will paste the line one line above
-
 ## Yanking
 
-- `y` will 'enter' delete mode
+- `y` will enter 'yank' mode
   - `y` will yank the current line
   - `j` will yank the current line plus one down
   - `w` will yank the word starting from the word and forward
   - `b` will yank the word starting from the word and backward
 
+## Pasting
+
+- `p` will paste the line one line below
+- `Shift` + `p` will paste the line one line above
+
 ## Deleting
 
-- `d` will 'enter' delete mode
+- `d` will enter 'delete' mode
   - `d` will delete the current line
   - `j` will delete the current line plus one down
   - `w` will delete the word starting from the word and forward
   - `b` will delete the word starting from the word and backward
   - `i` will start the 'delete inside' mode, waiting for input on what to delete around, e.g. `"`, `)`
-
-### Help
-
-- `:help` or `:h` will open the help guides
-- `:help <topic>` will open the help guides for that `<topic>`
-- `:helpgrep <term>` will open the help guides with a match on `<term>`
-- `:options` will show every possible option, you can use `/` to then search
 
 ## Undo
 
@@ -78,12 +70,9 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 - `Ctrl` + `c` will exit Insert Mode
 - `Ctrl` + `[` will exit Insert Mode
 
-## Visual Mode
+## Visual (Line) Mode
 
 - `v` will enter Visual Mode
-
-## Visual Line Mode
-
 - `Shift` + `v` will enter Visual Line Mode and highlight the whole line
 
 ### In Visual Mode
@@ -105,6 +94,13 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 You can add words to you dictionary.
 
 - `zg` will add the current word under the cursor to your dictionary.
+
+## Help
+
+- `:help` or `:h` will open the help guides
+- `:help <topic>` will open the help guides for that `<topic>`
+- `:helpgrep <term>` will open the help guides with a match on `<term>`
+- `:options` will show every possible option, you can use `/` to then search
 
 ## Plugins
 
