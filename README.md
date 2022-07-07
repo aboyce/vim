@@ -113,6 +113,32 @@ You can add words to you dictionary.
 - `:helpgrep <term>` will open the help guides with a match on `<term>`
 - `:options` will show every possible option, you can use `/` to then search
 
+### Debugging Setup
+
+Show health of everything:
+
+```
+:checkhealth
+```
+
+Or more specifically:
+
+```
+:checkhealth telescope
+```
+
+Show mappings:
+
+- `:nmap`
+- `:imap`
+- `:vmap`
+
+See the loaded scripts:
+
+```
+:scriptnames`
+```
+
 ## Plugins
 
 ### Coc
