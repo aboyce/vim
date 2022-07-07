@@ -4,7 +4,7 @@ Notes and helper snippets whilst learning vim.
 
 Additional helper for supporting tools:
 
-#### [tmux](./tmux.md)
+- [tmux](./tmux.md)
 
 ## Normal Mode
 
