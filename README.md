@@ -87,11 +87,18 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 - `d` to delete the selection (add to register)
 - `Esc` will exit Visual Mode
 
-## Command Mode
+## Finding
+
+- `*` will hop to the next instance of the word you are on
+- `#` will hop to the previous instance of the word you are on
+
+When you have used either `*` or `#`, you can then also use `n` and `Shift` + `n` to continue moving between them
+
+Searching through the file, like a classic `Ctrl` + `f`:
 
 - `/` will enter Command Mode, you can then type to search, press `Enter` to lock in the search
-- `n` will hop through the results
-- `Shift` + `n` will hop through the results in reverse
+  - `n` will hop through the results
+  - `Shift` + `n` will hop through the results in reverse
 
 ## Spelling
 
@@ -114,10 +121,3 @@ You can navigate auto-suggestions with:
 
 - `Ctrl` + `n` to go to the next suggestion
 - `Ctrl` + `p` to go to the previous suggestion
-
-## Helpful Tips
-
-- `*` will hop to the next instance of the word you are on
-- `#` will hop to the previous instance of the word you are on
-
-When you have used either `*` or `#`, you can then also use `n` and `Shift` + `n` to continue moving between them
