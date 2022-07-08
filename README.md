@@ -27,6 +27,13 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 - `<relative line number> j` to jump down to that relative line number
 - `<relative line number> k` to jump up to that relative line number
 
+## Windows
+
+You can use `Ctrl` + `w` to acccess 'window mode'.
+
+- `:new` will create a new horizontal window
+- `:vnew` will create a new vertical window
+
 ## Yanking
 
 - `y` will enter 'yank' mode
@@ -39,6 +46,19 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 
 - `p` will paste the line one line below
 - `Shift` + `p` will paste the line one line above
+
+## Yanking and Pasting with the Clipboard
+
+To access the external clipboard you require a helper tool, you can see if it looks ok with:
+
+```
+:checkhealth
+```
+
+If the tooling is set up you can use:
+
+- `"+y` to yank to the clipboard
+- `"+p` to paste from the clipboard
 
 ## Deleting
 
