@@ -27,9 +27,13 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 - `<relative line number> j` to jump down to that relative line number
 - `<relative line number> k` to jump up to that relative line number
 
+## Navigation
+
+- `Ctrl` + `t` will go back when you have done something like gone to definition
+
 ## Windows
 
-You can use `Ctrl` + `w` to acccess 'window mode'.
+You can use `Ctrl` + `w` to access 'window mode'.
 
 - `:new` will create a new horizontal window
 - `:vnew` will create a new vertical window
