@@ -10,6 +10,8 @@ Additional helper for supporting tools:
 
 ### Movement
 
+#### Basic
+
 - `j`, `k`, `h`, `l` general movement
 
 - `w` to hop forwards by a word
@@ -26,6 +28,18 @@ A word in vim only includes letters, numbers and digits. To consider special cha
 
 - `<relative line number> j` to jump down to that relative line number
 - `<relative line number> k` to jump up to that relative line number
+
+#### Jumping Horizontally
+
+- `f` will enter 'find' mode, you can then type another letter to jump to it
+  - `F` will do the same but backwards
+- `t` will enter 'to' mode, you can then type another letter to jump to that letter
+  - `T` will do the same but backwards
+
+Rather than repeating the same `fa`, `fa` to keep jumping to the next one:
+
+- `;` will jump to the next instance
+- `,` will jump back to the previous instance
 
 ## Navigation
 
@@ -55,7 +69,7 @@ You can use `Ctrl` + `w` to access 'window mode'.
 
 To access the external clipboard you require a helper tool, you can see if it looks ok with:
 
-```
+```bash
 :checkhealth
 ```
 
@@ -67,11 +81,22 @@ If the tooling is set up you can use:
 ## Deleting
 
 - `d` will enter 'delete' mode
-  - `d` will delete the current line
+- `c` will enter 'delete' mode, but after the operation enter Insert mode
+
+  - `d` will delete the current line, this is `c` if you have started deleting with `c`
   - `j` will delete the current line plus one down
-  - `w` will delete the word starting from the word and forward
-  - `b` will delete the word starting from the word and backward
+  - `w` will delete the word starting from the word and forward (delete word)
+  - `b` will delete the word starting from the word and backward (delete beginning)
   - `i` will start the 'delete inside' mode, waiting for input on what to delete around, e.g. `"`, `)`
+  - `f` will start the 'delete find' mode, waiting for input on what to find to (look at _Jumping Horizontally_)
+  - `t` will start the 'delete to' mode, waiting for input on what to delete to (look at _Jumping Horizontally_)
+
+- `x` will delete a single character
+- `s` will delete a single character and enter Insert mode
+
+- `D` will delete the rest of the line
+- `C` will delete the rest of the line and enter Insert mode
+- `S` will delete the line and enter Insert mode
 
 ## Undo
 
@@ -138,13 +163,13 @@ You can add words to you dictionary.
 
 Show health of everything:
 
-```
+```bash
 :checkhealth
 ```
 
 Or more specifically:
 
-```
+```bash
 :checkhealth telescope
 ```
 
@@ -156,13 +181,13 @@ Show mappings:
 
 See the loaded scripts:
 
-```
+```bash
 :scriptnames`
 ```
 
 Reload the config:
 
-```
+```bash
 :so %
 ```
 
