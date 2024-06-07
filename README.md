@@ -64,6 +64,10 @@ You can use `Ctrl` + `w` to access 'window mode'.
 
 - `r` will allow you to replace a character, type `r` and then the new character you want to replace.
 
+## Removing
+
+- `x` will allow you to remove a single character.
+
 ## Pasting
 
 - `p` will paste the line one line below
