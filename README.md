@@ -59,6 +59,10 @@ You can use `Ctrl` + `w` to access 'window mode'.
   - `j` will yank the current line plus one down
   - `w` will yank the word starting from the word and forward
   - `b` will yank the word starting from the word and backward
+ 
+## Replacing
+
+- `r` will allow you to replace a character, type `r` and then the new character you want to replace.
 
 ## Pasting
 
