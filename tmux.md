@@ -38,10 +38,15 @@ A pane is created by splitting a window.
 
 You can change between panes with:
 
-- `prefix Up`, `prefix LEft`, `prefix Right`, `prefix Down` will move between panes
+- `prefix Up`, `prefix Left`, `prefix Right`, `prefix Down` will move between panes
 - `prefix q` will show the numbers of each pane, you can then move to it with `prefix q *` where `*` is the number to move to
 - `prefix o` will move to the next pane
 - `prefix` `Ctrl + o` will swap the pane with the active pane
+
+You can vertically and horizontally resize the panes with:
+
+- `prefix Alt+1` to horizontally resize
+- `prefix Alt+2` to vertically resize
 
 ### Custom Configuration
 
